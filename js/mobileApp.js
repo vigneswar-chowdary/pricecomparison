@@ -1,0 +1,1 @@
+var mobileApp=angular.module('mobileApp',[]);

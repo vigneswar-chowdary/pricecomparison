@@ -1,0 +1,41 @@
+.right{
+    float:right-side;
+	font-alignment:center;
+}
+.left{
+    float:left;
+	
+}
+h1
+{
+font-family:Georgia,serif;
+text-align:center;
+}
+.mobileres
+{
+width:30%;
+height:;
+font-family:sans-serif;
+text-align:center;
+margin-left:10px;
+margin-right:10px;
+}
+img
+{
+background-image:"../images/phone.jpg";
+}
+.dev
+{
+float:right;
+font-size:5px;
+}
+.gap
+{
+height:50px;
+}
+.bookres
+{
+font-family:sans-serif;
+margin-left:10px;
+mergin:right:10px;
+}

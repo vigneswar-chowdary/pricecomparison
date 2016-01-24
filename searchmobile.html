@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+@import url('css/bootstrap.min.css');
+@import url('css/pro.css');
+@import url('css/font-awesome-4.3.0/css/font-awesome.min.css');
+</style>
+<script src="js/jquery.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/mobileApp.js"></script>
+<script src="js/mobileSearch.js"></script>
+<script src="js/hide.js"></script>
+</head>
+<body>
+<div class="jumbotron">
+
+<p class="dev">
+developed by
+<img src="images/vigneswar.jpg" class="img-circle" height="70" width="70"/>
+vigneswar
+<img src="images/giri.jpg" class="img-circle" height="70" width="70"/>
+giri aditya
+<img src="images/pvp.jpg" class="img-circle" height="70" width="70"/>
+college:p.v.p.siddhartha
+<img src="images/pipe-dream.jpg" class="img-circle" height="70" width="70"/>
+team:pipedream
+</p>
+</div>
+<div class="gap">
+</div>
+<div class="container-fluid">
+</div>
+<div ng-app="mobileApp" ng-controller="mobileSearch" class="container">
+<form ng-submit="searchmob()">
+<div class="form-inline">
+<input ng-model="mobile" type="text" class="form-control" placeholder="search mobiles">
+<i class={{fa-search}}></i>
+</div>
+<p>
+<div ng-repeat="x in mobileresults" class="container">
+<div ng-repeat="y in x.product|filter:mobile" class="mobileres col-md-4 panel panel-success">
+<div class="panel-body">
+<p>
+<span class="typo">company : {{y.brand}}</span><br>
+model:<strong>{{y.model}}</strong>
+<div class="panel-body" ng-repeat="z in y.stores">
+{{z.website}}:&#8377{{z.price}}
+<img src={{z.image}} />
+</div>
+
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</p>
+</div>
+</body>
